@@ -34,4 +34,7 @@
     6. true === Boolean(2) returns true, since 2 is not an empty value, Boolean(2) converts 2 to true and true === true.
 16. == will convert different types to numbers, while === is strict equality which will check equality without type conversion, and so will be false if comparing two different types.
 17. 'How are you?' gets printed, since 2 == true is false, as true gets converted to 1 and 2 does not equal 1, and so 'Hello!' is not printed. Instead, in the else if statement, the 2 gets converted to a boolean, and since it 2 is a non empty value, it gets converted to true, so the code in the else if gets executed.
-18.
+18. See part1-question18.js
+19. The result will be [6, 8, 10], because modifyArray will call doSomething with parameters num and a function which doubles input for each num in the input array [1, 2, 3] Do something then adds 2 to the number input and returns it run through the input callback function, which doubles the input. So 2*(1 + 2) = 6, 2*(2 + 2) = 8, 2*(3 + 2) = 10.
+20. See part1-question20.js
+21. This code will output 1 4 3 2, because it will first run 1, then put a timer to print 2 which takes 1 second, then a timer to print 3 which takes 0 seconds, then print 4 to console. In this time, it prints 4 before executing either and 3 before printing 2.
